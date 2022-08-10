@@ -2,7 +2,7 @@ body {
   margin: 0;
 }
 header {
-  background-color: #373738;
+  background-color: #c8c8ed;
   padding: 15px;
 }
 header ul {
@@ -122,11 +122,4 @@ h1 {
     width: 100%;
     padding: 5%;
   }
-}
-
-#centerme {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
 }

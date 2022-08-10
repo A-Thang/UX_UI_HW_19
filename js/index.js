@@ -6,6 +6,7 @@ $( "#button2" ).click(function() {
     alert( "Thanks for downloading my resume!" );
   });
 
-  $('#hideme').on("click", function(){
-    $('.content').slideToggle();
+  // Step 2: Change a color
+$('img').on("click", function(){
+    $('header').css("background-color","pink");
   });
