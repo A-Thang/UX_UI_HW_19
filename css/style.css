@@ -123,3 +123,10 @@ h1 {
     padding: 5%;
   }
 }
+
+#centerme {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
