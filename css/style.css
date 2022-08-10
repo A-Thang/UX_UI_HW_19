@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+}
+header {
+  background-color: #373738;
+  padding: 15px;
+}
+header ul {
+  float: right;
+  color: white;
+}
+header li {
+  display: inline-block;
+  padding: 0px 5px;
+}
+header p {
+  display: inline-block;
+}
+.heroImg {
+  background-color: #EBEBEB;
+  padding: 100px 15px;
+}
+.content {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 50px;
+  background-color: #FFFFFF;
+  text-align: center;
+}
+button {
+  padding: 15px;
+  background-color: #373738;
+  color: white;
+  font-size: 15px;
+  border-radius: 4px;
+}
+footer {
+  background-color: #373738;
+  padding: 5px;
+  color: white;
+}
+footer ul {
+  list-style: none;
+  padding-left: 5px;
+}
+footer li {
+  display: inline-block;
+  padding: 0px 7px;
+}
+
+.flexContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flexContainer div {
+  width: 33%;
+  padding: 5%;
+}
+
+.workGrid {
+  margin: 0px 5px;
+  padding: 5%;
+  display: grid;
+  grid-template-rows: 25% 25% 25% 25%;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: "image1 item1"  "image2 item2"  "image3 item3";  
+  justify-content: space-around;
+  
+}
+
+
+#image1 {
+  grid-area: image1;
+}
+
+#image2 {
+  grid-area: image2; 
+}
+
+#image3 {
+  grid-area: image3;
+}
+
+
+#item1 {
+  grid-area: item1; 
+}
+
+#item2 {
+  grid-area: item2; 
+}
+
+#item3 {
+  grid-area: item3; 
+}
+
+h1 {
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightgray;
+  }
+  .workGrid {
+    margin: 0px 5px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "image1" "item1" "image2" "item2" "image3" "item3";
+    justify-content: center;
+  }
+
+  .flexContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+  .flexContainer div {
+    width: 100%;
+    padding: 5%;
+  }
+}
